@@ -1,1 +1,1 @@
-export const API_URL = 'http://www.hml.ages.pucrs.br:4900'
+export const API_URL = 'localhost:3000'
