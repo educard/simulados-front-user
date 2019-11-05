@@ -37,7 +37,7 @@ class Login extends Component {
             <Input
               onChange={event => this.setState({ email: event.target.value })}
               placeholder="e-mail"
-              className="login__input"
+              className={['login__input', 'test-login-input']}
               maxLength={50}
               value={this.state.email}
               type="text"
@@ -50,7 +50,7 @@ class Login extends Component {
               placeholder="senha"
               type="password"
               maxLength={50}
-              className="login__input"
+              className={['login__input', 'test-password-input']}
               value={this.state.password}
               required
             />
