@@ -3,11 +3,17 @@ import React from 'react'
 import Logo from '../Logo'
 import Icon from '../Icon'
 import media from 'utils/media'
+import Button from 'components/Button'
 import { connect } from 'react-redux'
 
 import { getUsername } from 'store/user'
 
 import './header.scss'
+
+const onPressEnter = () => {
+  localStorage.clear()
+  window.location.reload()
+}
 
 const Header = ({ username = '', location }) =>
   media.greaterThan.phone() ? (
@@ -16,6 +22,7 @@ const Header = ({ username = '', location }) =>
         <Logo />
         <section className="user-section space-between-inline-m">
           <Icon name="user" height={30} width={30} />
+          <Button onClick={onPressEnter}>Logout</Button>
           <strong>{username}</strong>
         </section>
       </div>
