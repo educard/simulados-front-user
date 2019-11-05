@@ -6,7 +6,7 @@ import './logo.scss'
 
 const Logo = ({ small }) => (
   <Link className={cn('logo', small && 'logo--small')} to="/">
-    <img className="logo__image" src={logo} />
+    <img className="logo__image" alt="" src={logo} />
   </Link>
 )
 

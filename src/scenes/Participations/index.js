@@ -18,10 +18,6 @@ const Title = ({ title, children }) => (
 )
 
 class Participations extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   componentDidMount() {
     const studentId = this.props.student.id
     this.props.fetchParticipations(studentId)
