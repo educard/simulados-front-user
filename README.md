@@ -3,5 +3,8 @@
 
 Frontend de usuários da solução "Simulados da OAB"
 
-# Acesse a nossa Wiki oficial:
-https://github.com/AGES-PUCRS/simulados-back/wiki
+### Deployment
+
+Clone o repo e rode na raiz do projeto:
+
+`sudo bash deploy.sh`
